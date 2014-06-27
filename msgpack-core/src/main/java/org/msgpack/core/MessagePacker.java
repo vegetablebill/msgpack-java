@@ -18,7 +18,7 @@ package org.msgpack.core;
 import org.msgpack.core.buffer.MessageBuffer;
 import org.msgpack.core.buffer.MessageBufferOutput;
 import org.msgpack.core.buffer.OutputStreamBufferOutput;
-import org.msgpack.value.Value;
+import org.msgpack.core.value.Value;
 
 import java.io.Closeable;
 import java.io.OutputStream;

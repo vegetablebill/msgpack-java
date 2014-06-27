@@ -30,14 +30,12 @@ import java.nio.charset.CodingErrorAction;
 
 import org.msgpack.core.MessagePack.Code;
 import org.msgpack.core.buffer.*;
-import org.msgpack.value.impl.ArrayCursorImpl;
-import org.msgpack.value.Cursor;
-import org.msgpack.value.Value;
-import org.msgpack.value.ValueType;
-import org.msgpack.value.holder.FloatHolder;
-import org.msgpack.value.holder.IntegerHolder;
-import org.msgpack.value.holder.ValueHolder;
-import org.msgpack.value.impl.CursorImpl;
+import org.msgpack.core.value.Cursor;
+import org.msgpack.core.value.ValueType;
+import org.msgpack.core.value.holder.FloatHolder;
+import org.msgpack.core.value.holder.IntegerHolder;
+import org.msgpack.core.value.holder.ValueHolder;
+import org.msgpack.core.value.impl.CursorImpl;
 
 import static org.msgpack.core.Preconditions.*;
 
@@ -118,7 +116,7 @@ public class MessageUnpacker implements Closeable {
 
 
     /**
-     * Get a {@link org.msgpack.value.Cursor} for traversing message-packed values
+     * Get a {@link org.msgpack.core.value.Cursor} for traversing message-packed values
      * @return
      */
     public Cursor getCursor() {

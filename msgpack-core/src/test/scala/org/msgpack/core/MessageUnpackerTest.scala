@@ -3,7 +3,7 @@ package org.msgpack.core
 import java.io.{EOFException, ByteArrayInputStream, ByteArrayOutputStream}
 import scala.util.Random
 import org.msgpack.core.buffer.{MessageBuffer, MessageBufferInput, OutputStreamBufferOutput, ArrayBufferInput}
-import org.msgpack.value.ValueType
+import org.msgpack.core.value.ValueType
 
 /**
  * Created on 2014/05/07.
