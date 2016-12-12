@@ -48,7 +48,7 @@ public class ListTemplate<E> extends AbstractTemplate<List<E>> {
         for (E e : target) {
             elementTemplate.write(pk, e);
         }
-        pk.writeArrayEnd();
+//        pk.writeArrayEnd();
     }
 
     public List<E> read(Unpacker u, List<E> to, boolean required)
@@ -66,7 +66,7 @@ public class ListTemplate<E> extends AbstractTemplate<List<E>> {
             E e = elementTemplate.read(u, null);
             to.add(e);
         }
-        u.readArrayEnd();
+//        u.readArrayEnd();
         return to;
     }
 }

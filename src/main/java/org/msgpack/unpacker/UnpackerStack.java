@@ -53,23 +53,23 @@ public final class UnpackerStack {
      * throws MessageTypeException if stack is invalid
      */
     public void checkCount() {
-        if (counts[top] > 0) {
-            return;
-        }
-
-        if (types[top] == TYPE_ARRAY) {
-            throw new MessageTypeException(
-                    "Array is end but readArrayEnd() is not called");
-        } else if (types[top] == TYPE_MAP) {
-            throw new MessageTypeException(
-                    "Map is end but readMapEnd() is not called");
-        } else { // empty
-            return;
-        }
+//        if (counts[top] > 0) {
+//            return;
+//        }
+//
+//        if (types[top] == TYPE_ARRAY) {
+//            throw new MessageTypeException(
+//                    "Array is end but readArrayEnd() is not called");
+//        } else if (types[top] == TYPE_MAP) {
+//            throw new MessageTypeException(
+//                    "Map is end but readMapEnd() is not called");
+//        } else { // empty
+//            return;
+//        }
     }
 
     public void reduceCount() {
-        counts[top]--;
+//        counts[top]--;
     }
 
     public void pop() {
